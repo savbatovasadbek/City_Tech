@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(242, 240, 241);
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  /* Butun sahifani bitta qolibda saqlash uchun */
+}
+
+.navbar {
+  padding: 25px 0;
+  background: rgb(50, 63, 70);
+  border-bottom: 3px solid rgb(197, 80, 59); /* Pastki rangli chiziq uchun */
+}
+
+.navigation {
+  display: flex; /* Logo va menyularni bir qator qilish uchun */
+  justify-content: space-between; /* Ularni ikki chekkaga ajratish uchun */
+  align-items: center; /* Logo va menyularni x o'qi bo'yicha to'g'irlash */
+}
+
+.logo h1 {
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 1px; /* Harflar orasidagi masofa */
+  cursor: pointer;
+  text-shadow: 1px 1px black; /* Yozuvga soya berish */
+  font-weight: 800;
+}
+
+.logo h1 span {
+  color: rgb(231, 90, 60);
+}
+
+.navbar-menyu li {
+  list-style: none;
+  color: #fff;
+  letter-spacing: 3px;
+  padding-left: 1.2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase; /* Barcha so'zlarni bosh harflarda yozish */
+  display: inline-block;
+  font-weight: 600;
+  text-shadow: 1px 1px black;
+}
+
+.navbar-menyu li:hover {
+  opacity: 0.9; /* Rang tiniqligi 90% */
+  color: rgb(231, 90, 60);
+  cursor: pointer;
+  transition: all 0.5s ease; /* Ragn almashishini sekinlashtirish */
+}
+
+.active {
+  opacity: 0.9 !important;
+  color: rgb(231, 90, 60) !important;
+  /* Sahifaga kirgan holatimizda HOME yoniq turishi uchun */
+  /* important-barcha kodlarni inkor qilib, o'zining bajarilishini ta'minlaydi */
+}
+
+header {
+  height: 100vh; /* Balandligi */
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../Images/banner-bg.jpg) center/cover no-repeat fixed;
+  /* Header qismining orqa foniga rasm va uning ustiga kulrang parda bor */
+}
+
+.banner {
+  text-align: center;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.banner h1 {
+  padding: 150px 0 30px 0;
+  letter-spacing: 3px;
+  font-size: 50px;
+}
+
+.banner p {
+  padding-bottom: 20px;
+  line-height: 30px;
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* End header styling */
+
+/* Start Newsletter styling */
+
+.newsletter {
+  background: rgb(44, 57, 63);
+  padding: 25px 0;
+}
+
+.newsletter .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news-content {
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.newsletter form input {
+  height: 40px;
+  width: 270px;
+  outline: none;
+  padding-left: 10px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.newsletter form input:focus {
+  border-color: blue;
+  transition: all 0.5s ease;
+  border: 2px solid blue;
+}
+
+.newsletter form button {
+  height: 40px;
+  width: 100px;
+  background: rgb(235, 68, 28);
+  font-family: sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.newsletter form button:hover {
+  background: rgb(202, 56, 20);
+}
+
+/* End Newsletter styling */
+
+/* Start blog styling */
+
+.blog {
+  background: rgb(243, 243, 243);
+  padding: 36px 0;
+}
+
+.blog .container {
+  gap: 2rem; /* Qutilar orasidagi masofa */
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-img {
+  text-align: center;
+}
+
+.blog-item img {
+  height: 120px;
+  width: 120px;
+}
+
+.blog .container .blog-item:nth-child(2) img {
+  width: 160px;
+  /* blog-item elementlarining 2-sidagi img ga murojaar */
+}
+
+.blog-content {
+  text-align: center;
+  margin: 30px 0 20px 0;
+}
+
+.blog-content p {
+  line-height: 20px; /* Satrlar orasidagi masofa */
+  padding-top: 20px;
+}
+
+/* End blog styling */
+
+/* Start footer styling */
+
+.footer {
+  height: 90px;
+  background: rgb(227, 61, 24);
+}
+
+.footer .container {
+  text-align: center;
+  color: #fff;
+  padding-top: 35px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+/* End footer styling */
